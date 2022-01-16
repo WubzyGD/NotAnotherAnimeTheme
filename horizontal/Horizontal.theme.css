@@ -202,6 +202,7 @@
 }
 #app-mount .guilds-2JjMmN .wrapper-38slSD {
   width: var(--server-container);
+  margin: 0 0;
 }
 #app-mount .guilds-2JjMmN [class*=listItem]:not([class*=listItemWrapper]) {
   width: var(--server-size);
@@ -211,7 +212,8 @@
 }
 #app-mount .guilds-2JjMmN [class*=guildSeparator] {
   transform: rotate(90deg);
-  width: var(--server-size);
+  width: 0;
+  height: 0;
 }
 #app-mount .guilds-2JjMmN [class*=expandedFolderBackground] {
   width: var(--server-size);
@@ -302,4 +304,10 @@ body.foldercontentopened .base-2jDfDU {
 .tutorialContainer-1pL9QS {
   margin-top: 78px;
   margin-bottom: 93px
+}
+
+.scroller-3X7KbA div:not(.listItem-3SmSlK)+div.listItem-3SmSlK {
+  width: 0!important;
+  height: 0!important;
+  margin: 0 0!important;
 }
